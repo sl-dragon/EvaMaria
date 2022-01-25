@@ -1,17 +1,17 @@
 class script(object):
-    START_TXT = """<b>Hello</b> {},
-My Name Is <a href=https://t.me/{}>{}</a>,
-Created By <a href=https://t.me/mybotz>My Botz</a>
+    START_TXT = """<b>කොහොමද ඉතින්...</b> {},
+මම <a href=https://t.me/{}>{}</a>,
+<a href=https://t.me/mybotz>My Botz</a> විසින් කල සංස්කරණයකි🔱
 <b> I Can Provide Movies, Just Add Me To Your Group And Enjoy</b>😍"""
     HELP_TXT = """HEY{}
 Here My Commands."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/mybotz>My Botz</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+    ABOUT_TXT = """✯ MY NAME: {}
+✯ CREATOR: <a href=https://t.me/mybotz>My Botz</a>
+✯ LIBRARY: PYROGRAM
+✯ LANGUAGE: PYTHON 3
+✯ DATA BASE: MONGO DB
+✯ BOT SERVER: HEROKU
+✯ BUILD STATUS: v1.0.1"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>oops!</b>
 There No source code"""
@@ -19,24 +19,24 @@ There No source code"""
 
 - Filter is the feature were users can set automated replies for a particular keyword and This Bot will respond whenever a keyword is found the message
 
-<b>NOTE:</b>
-1. Bot should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
+<b>සැලකියයුතුයි :</b>
+1. BOT ට අනිවාර්යෙන් Admin ලෙස Add කර තිබිය යුතුයි .
+2. Admin කෙනෙක්ට විතරයි Filters Add කරන්න පුළුවන් .
+3. Alert Buttons එක බාවිතා කල හැක්කේ අකුරු 64 වඩා අඩු වාක්‍ය සදහා පමණි .
 
 <b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+• /filter - <code>Filter එකක් Add කිරීමට </code>
+• /filters - <code>Chat එකට මෙතෙක් Add කර ඇති Filters list එක </code>
+• /del - <code>Filter එකක් Delete කිරීමට </code>
+• /delall - <code>සියලුම Filters Delete කිරීමට </code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - Bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. BOT supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
+1. කිසිදු අන්තර්ගතයක් නොමැතිව බොත්තම් යැවීමට ටෙලිග්‍රාම් ඔබට ඉඩ නොදේ, එබැවින් අන්තර්ගතය අනිවාර්ය වේ.
+2. BOT ඕනෑම Media සහිත බොත්තම් සඳහා සහය දක්වයි.
+3. Buttons සියල්ල Markdown Format එකෙන් තිබිය යුතුය 
 
 <b>URL buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/EvaMariaBot)</code>
@@ -91,10 +91,10 @@ This module only works for my admins
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
+★ TOTAL USERS: <code>{}</code>
+★ TOTAL CHATS: <code>{}</code>
+★ USED STORAGE: <code>{}</code> 𝙼𝚒𝙱
+★ FREE STORAGE: <code>{}</code> 𝙼𝚒𝙱"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
